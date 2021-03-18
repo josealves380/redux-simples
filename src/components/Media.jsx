@@ -4,14 +4,13 @@ import { connect } from 'react-redux'
 import Card from './Card'
 
 function Media(props) {
-    console.log(props.min)
-    console.log(props.max)
+    const {min, max} = props
     return (
         <Card title="Média dos Números" green>
             <div>
                 <span>
                     <span>Resultado:</span>
-                    <strong>{10}</strong>
+                    <strong>{(max + min) /2}</strong>
 
                 </span>
             </div>
